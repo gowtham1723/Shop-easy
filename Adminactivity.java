@@ -12,7 +12,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Adminactivity extends AppCompatActivity {
-
+    private Button button;
     Button btnLogOut;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -22,6 +22,13 @@ public class Adminactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adminactivity);
         btnLogOut = (Button) findViewById(R.id.btnLogOut);
+        button = (Button) findViewById(R.id.changepricebtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeprice();
+            }
+        });
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,5 +40,10 @@ public class Adminactivity extends AppCompatActivity {
             }
         });
 
+
+    }
+    public void changeprice() {
+        Intent intent = new Intent(this, adminitemslist.class);
+        startActivity(intent);
     }
 }
