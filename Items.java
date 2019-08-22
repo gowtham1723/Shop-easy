@@ -4,15 +4,25 @@ public class Items {
     private String Itemname;
     private String Location;
     private String Price;
+    private String Image;
 
-    public Items(String itemname, String location, String price) {
+    public Items(String itemname, String location, String price,String image) {
         Itemname = itemname;
         Location = location;
         Price = price;
+        Image=image;
     }
     public Items()
     {
 
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
     }
 
     public String getItemname() {

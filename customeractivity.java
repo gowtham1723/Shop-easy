@@ -9,7 +9,7 @@ import android.widget.Button;
 
 
 public class customeractivity extends AppCompatActivity {
-    private Button button;
+    private Button button,button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +21,20 @@ public class customeractivity extends AppCompatActivity {
                 openitemlist();
             }
         });
+        button1=(Button) findViewById(R.id.viewlocation);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openitemslistforlocation();
+            }
+        });
     }
     public void openitemlist() {
         Intent intent = new Intent(this, Itemslist.class);
+        startActivity(intent);
+    }
+    public void openitemslistforlocation() {
+        Intent intent = new Intent(this, ItemslistLocation.class);
         startActivity(intent);
     }
 }
