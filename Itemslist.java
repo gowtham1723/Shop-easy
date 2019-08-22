@@ -1,11 +1,10 @@
-package com.example.supermarket;
+package com.example.supermaket_user;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,7 +23,7 @@ public class Itemslist extends AppCompatActivity {
 
         lv=(ListView) findViewById(R.id.listview);
         Query query= FirebaseDatabase.getInstance().getReference().child("Items");
-        FirebaseListOptions <Items>  options=new FirebaseListOptions.Builder<Items>()
+        FirebaseListOptions<Items> options=new FirebaseListOptions.Builder<Items>()
                 .setLayout(R.layout.items)
                 .setQuery(query,Items.class)
                 .setLifecycleOwner(Itemslist.this)
