@@ -1,4 +1,4 @@
-package com.example.supermarket;
+package com.example.supermaket_user;
 
 public class Items {
     private String Itemname;

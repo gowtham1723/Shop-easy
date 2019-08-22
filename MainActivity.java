@@ -1,4 +1,4 @@
-package com.example.supermarket;
+package com.example.supermaket_user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,13 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.adminbtn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openadminlogin();
-            }
-        });
+
         button1 = (Button) findViewById(R.id.customerbtn);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,10 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void openadminlogin() {
-        Intent intent = new Intent(this, adminlogin.class);
-        startActivity(intent);
-    }
+
     public void opencustomeractivity() {
         Intent intent = new Intent(this, customeractivity.class);
         startActivity(intent);
