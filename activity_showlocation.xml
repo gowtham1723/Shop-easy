@@ -4,46 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customeractivity">
-
+    tools:context=".showlocation">
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="169dp"
-        android:layout_height="334dp"
+        android:id="@+id/imageView4"
+        android:layout_width="280dp"
+        android:layout_height="290dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158"
-        app:srcCompat="@drawable/logo2" />
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/fp" />
 
-    <Button
-        android:id="@+id/btnviewprice"
+    <TextView
+        android:id="@+id/item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="View list of available items"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <Button
-        android:id="@+id/viewlocation"
+    <TextView
+        android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Find location of items"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnviewprice" />
+        app:layout_constraintTop_toBottomOf="@+id/item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
