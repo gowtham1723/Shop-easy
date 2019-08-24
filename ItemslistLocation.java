@@ -46,6 +46,7 @@ public class ItemslistLocation extends AppCompatActivity {
         };
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(listclick);
+
     }
     private AdapterView.OnItemClickListener listclick=new AdapterView.OnItemClickListener() {
         @Override
